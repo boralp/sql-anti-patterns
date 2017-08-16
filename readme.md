@@ -1,6 +1,5 @@
 # SQL Anti-Patterns
 
-[create an anchor](#anchors-in-markdown)
 ### Logical Database Design Anti-Patterns
 
   * [Multi-Valued Attribute](#multi-valued-attribute)
@@ -496,6 +495,6 @@ into the SQL query. Instead, compute the hash in your application code,
 and use only the hash in the SQL query.
 
 
-#Source
+# Source
 
 https://github.com/jarulraj/sqlcheck
