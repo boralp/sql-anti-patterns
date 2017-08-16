@@ -1,3 +1,47 @@
+# SQL Anti-Patterns
+
+[create an anchor](#anchors-in-markdown)
+### Logical Database Design Anti-Patterns
+
+  * [Multi-Valued Attribute](#multi-valued-attribute)
+  * [Recursive Dependency](#recursive-dependency)
+  * [Primary Key Does Not Exist](#Primary-key-does-not-exist)
+  * [Generic Primary Key](#generic-primary-key)
+  * [Foreign Key Does Not Exist](#foreign-key-does-not-exist)
+  * [Entity-Attribute-Value Pattern](#entity-attribute-value-pattern)
+  * [Metadata Tribbles](#metadata-tribbles)
+
+### Physical Database Design Anti-Patterns
+
+  * [Imprecise Data Type](https://github.com/jarulraj/sqlcheck/blob/master/docs/physical/2001.md)
+  * [Values In Definition](https://github.com/jarulraj/sqlcheck/blob/master/docs/physical/2002.md)
+  * [Files Are Not SQL Data Types](https://github.com/jarulraj/sqlcheck/blob/master/docs/physical/2003.md)
+  * [Too Many Indexes](https://github.com/jarulraj/sqlcheck/blob/master/docs/physical/2004.md)
+  * [Index Attribute Order](https://github.com/jarulraj/sqlcheck/blob/master/docs/physical/2005.md)
+
+### Query Anti-Patterns
+
+  * [SELECT *](#select-*)
+  * [NULL Usage](#null-usage)
+  * [NOT NULL Usage](#not-null-usage)
+  * [String Concatenation](#string-concantenation)
+  * [GROUP BY Usage](#group-by-usage)
+  * [ORDER BY RAND Usage](#order-by-rand-usage)
+  * [Pattern Matching Usage](#pattern-matching-usage)
+  * [Spaghetti Query Alert](#spaghetti-query-alert)
+  * [Reduce Number of JOINs](#reduce-number-of-joins)
+  * [Eliminate Unnecessary DISTINCT Conditions](#eliminate-unnecessary-distinct-conditions)
+  * [Implicit Column Usage](#implicit-column-usage)
+  * [HAVING Clause Usage](#having-clause-usage)
+  * [Nested sub queries](#nested-sub-queries)
+  * [OR Usage](#or-usage)
+  * [UNION Usage](#union-usage)
+  * [DISTINCT & JOIN Usage](distinct-&-join-usage)
+
+### Application Development Anti-Patterns
+
+  * [Readable Passwords](#readable-passwords)
+
 # Logical Database Design Anti-Patterns
 
 ## Multi-Valued Attribute
@@ -452,4 +496,6 @@ into the SQL query. Instead, compute the hash in your application code,
 and use only the hash in the SQL query.
 
 
-Source: https://github.com/jarulraj/sqlcheck
+#Source
+
+https://github.com/jarulraj/sqlcheck
